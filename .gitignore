@@ -1,0 +1,5 @@
+.venv
+trashcode.py
+.streamlit
+.env
+__pycache__
