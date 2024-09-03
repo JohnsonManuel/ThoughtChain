@@ -13,7 +13,7 @@ repo_id = "google/flan-t5-large"
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 def create_db_from_youtube_video_url(video_url: str) -> FAISS:
-    loader = YoutubeLoader.from_youtube_url(video_url,add_video_info =True)
+    loader = YoutubeLoader.from_youtube_url(video_url)
     transcript = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=0)
     docs = text_splitter.split_documents(transcript)
