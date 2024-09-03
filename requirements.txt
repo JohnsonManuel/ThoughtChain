@@ -1,0 +1,7 @@
+langchain_community
+langchain_huggingface
+requests      
+youtube-transcript-api
+streamlit   
+faiss-cpu
+numpy==1.23.5
