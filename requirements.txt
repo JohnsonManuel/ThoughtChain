@@ -1,4 +1,3 @@
-distutils
 langchain_community
 langchain_huggingface
 requests      
